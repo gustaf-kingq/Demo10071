@@ -13,5 +13,10 @@ namespace Demo10071.Controllers
         {
             return View();
         }
+
+        public ActionResult About()
+        {
+            return View();
+        }
     }
 }

@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+</head>
+<body>
+    <div>
+        <h2>Welcome to my view: @ViewBag.Title</h2>
+        <p>Navigation</p>
+        <div>
+            @Html.ActionLink("Home","Index")
+            @Html.ActionLink("About me","About")
+        </div>
+    </div>
+    @RenderBody()
+    <footer>
+        <p>Blerp, at the bottom.</p>
+    </footer>
+</body>
+</html>
